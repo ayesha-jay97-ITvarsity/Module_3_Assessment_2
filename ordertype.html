@@ -1,0 +1,53 @@
+ <!-- after clicking on the "Place Order" button, customer is taken to either one of two pages: 
+    delivery/collection page -->
+
+      <!-- a page for collection/delivery -->
+      <!-- after selecting an option above, customer is taken to one of two pages:
+           1. contact page with collection details (restaurant phone no., whatsap no., email address, physical address) 
+           2. delivery details form: customer's number, address, email -->
+           
+
+<!-- after selecting collection/delivery, we go to thank you page-->
+<!-- thank you page: give a random order number -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Baana's Kitchen | Your Order </title>             <!-- title of page name in browser tab -->
+        <link rel = "stylesheet" href = "style.css">     
+        <link rel = "stylesheet" href = "fontAwesome/css/all.css">
+    </head>
+        
+    <body class = "home-body">                               <!-- not a div, but we can still style tags with assigned classes-->
+        
+        <div class = "back-button">
+            <a href = "index.html"><i class = "fa"> &#xf0a8; </i>Back to main menu </a>
+        </div>
+
+        <div id = "header">                                  
+            <img src = "images/header_5.png">                <!-- insert logo header  img -->
+        </div>
+
+        <div id = "home">                                    <!-- all content below the header, which may differ on each page -->
+
+            <div class = "item">                             <!-- individual menu item -->
+
+                <div class = "order-type">                     
+
+                    <h1><b><i> Select an option for your order: </i></b></h1>
+                                        
+                    <a class = "order-type-button" href = "collect.html"> COLLECT </a>    <!-- after clicking on the "Order" button, go to thank you page: thank you for your order-->
+
+                    <h1><b><i> or </i></b></h1>
+
+                    <a class = "order-type-button" href = "delivery.html"> DELIVER </a>
+
+                    <br><br>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+

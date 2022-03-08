@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Baana's Kitchen | Beverages | Mango Lassie </title>             <!-- title of page name in browser tab -->
+        <link rel = "stylesheet" href = "style.css">     
+        <link rel = "stylesheet" href = "fontAwesome/css/all.css">
+    </head>
+        
+    <body class = "home-body">                               <!-- not a div, but we can still style tags with assigned classes-->
+        
+        <div class = "back-button">
+            <a href = "index.html"><i class = "fa"> &#xf0a8; </i>Back to main menu </a>
+        </div>
+
+        <div id = "header">                                  
+            <img src = "images/header_5.png">                <!-- insert logo header  img -->
+        </div>
+
+        <div id = "home">                                    <!-- all content below the header, which may differ on each page -->
+
+            <div class = "item">                             <!-- individual menu item -->
+
+                <div class = "item-descript">
+
+                    <!-- img of menu-item-->
+                    <img src = "images/mango_lassi.png" width = "80%">
+
+                    <!-- item description, price, serving size-->
+                    <div class = "item-descript-details">
+                        
+                        <h1><b> Price:</b> R47 </h1>
+                        <h1 style = "float: right;"><b> Serving size:</b> 1 </h1>     <!-- to make the words "serving size" appr to the right of "price" -->
+                        <br>
+
+                        <h1><b> Description:</b> </h1>
+
+                        <p><i>  Mango lassi is a delicious creamy drink with mango, yogurt, 
+                                milk, a little sugar, and a sprinkling of cardamom. It's cool 
+                                and refreshing on a hot day! Optional are Chia or Falooda seeds, 
+                                as well as almond milk.
+                        </p></i>
+                    </div>
+
+                    <div class = "extras">
+                        <h2><i><b><u>Extras</u></b></i></h2>    <!-- make it smaller than the page heading size -->
+                        
+                        <input id = "check-01" type = "checkbox">                               
+                        <label for = "check-01" > Chia Seeds.............. R5 </label>
+    
+                        <br>
+                        
+                        <input id = "check-02" type = "checkbox">                               
+                        <label for = "check-02" > Falooda Pits........... R7 </label>
+    
+                        <br>
+    
+                        <input id = "check-03" type = "checkbox">           <!-- to create a checkbox for the ingred's-->
+                        <label for = "check-03" > Plain Yoghurt......... R8 </label>
+    
+                        <br>
+    
+                        <input id = "check-04" type = "checkbox">           <!-- to create a checkbox for the ingred's-->
+                        <label for = "check-04" > Almond milk............. R12 <br><br></label>
+                    </div>
+
+                    <div id = "contact_form">       <!-- make textbox float to the right of the checkbox -->
+
+                        <h1><u> Messages:</u></h1>
+                        
+                        <input type = "text" placeholder = "Your Name" id = "name"/>
+
+                        <br><br><br>
+
+                        <textarea placeholder = "Additional notes for your order. For example, food allergies, etc."></textarea>
+
+                        <br><br><br>
+
+                        <a class = "button" href = "ordertype.html"> ORDER </a>            <!-- after clicking on the "Order" button, go to thank you page: thank you for your order-->
+
+                    </div>   
+
+                </div>
+                
+            </div>
+
+        </div>
+    </body>
+</html>
+
+

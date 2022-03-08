@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Baana's Kitchen | Meals | Butter Chicken </title>             <!-- title of page name in browser tab -->
+        <link rel = "stylesheet" href = "style.css">     
+        <link rel = "stylesheet" href = "fontAwesome/css/all.css">
+    </head>
+        
+    <body class = "home-body">                               <!-- not a div, but we can still style tags with assigned classes-->
+        
+        <div class = "back-button">
+            <a href = "index.html"><i class = "fa"> &#xf0a8; </i>Back to main menu </a>
+        </div>
+
+        <div id = "header">                                  
+            <img src = "images/header_5.png">                <!-- insert logo header  img -->
+        </div>
+
+        <div id = "home">                                    <!-- all content below the header, which may differ on each page -->
+
+            <div class = "item">                             <!-- individual menu item -->
+
+                <div class = "item-descript">
+
+                    <!-- img of menu-item-->
+                    <img src = "images/butterchick_final.png" width = "80%">
+
+                    <!-- item description, price, serving size-->
+                    <div class = "item-descript-details">
+                        
+                        <h1><b> Price:</b> R80 </h1>
+                        <h1 style = "float: right;"><b> Serving size:</b> 1 </h1>     <!-- to make the words "serving size" appr to the right of "price" -->
+                        
+                        <h1 style><b> Description:</b> </h1>
+
+                        <p><i>  Tenderised chicken curry stewed in a delectable amalgamation of  
+                                spiced tomato and butter sauce with a rich creamy texture. Garnished 
+                                with yoghurt, corn, coriander, and lemon slices. On the side, this dish 
+                                goes best with our garlic naan bread or rice.
+                        </p></i>
+                    </div>
+
+                    <div class = "extras">
+                        <h2><i><b><u> On The Side:</u></b></i></h2>    <!-- make it smaller than the page heading size -->
+                        
+                        <input id = "check-01" type = "checkbox">           <!-- to create a checkbox for the ingred's-->
+                        <label for = "check-01" > Rice........................ R35 </label>             <!-- the actual label ingredient that must be checked in the checkbox-->
+    
+                        <br>
+    
+                        <input id = "check-02" type = "checkbox">                               
+                        <label for = "check-02" > Naan...................... R8 </label>
+    
+                        <br>
+    
+                        <input id = "check-03" type = "checkbox">           <!-- to create a checkbox for the ingred's-->
+                        <label for = "check-03" > Chips..................... R25 </label>
+    
+                        <br>
+    
+                        <input id = "check-04" type = "checkbox">           <!-- to create a checkbox for the ingred's-->
+                        <label for = "check-04" > Roti........................ R8 <br><br></label>
+                    </div>
+
+                    <div id = "contact_form">       <!-- make textbox float to the right of the checkbox -->
+
+                        <h1><u> Messages:</u></h1>
+                        
+                        <input type = "text" placeholder = "Your Name" id = "name"/>
+
+                        <br><br><br>
+
+                        <textarea placeholder = "Additional notes for your order. For example, food allergies, etc."></textarea>
+
+                        <br><br>
+
+                        <a class = "button" href = "ordertype.html"> ORDER </a>            <!-- after clicking on the "Order" button, go to thank you page: thank you for your order-->
+
+                    </div>   
+
+                </div>
+                
+            </div>
+
+        </div>
+    </body>
+</html>
+
+

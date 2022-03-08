@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Baana's Kitchen | Home </title>             <!-- title of page name in browser tab -->
+        <link rel = "stylesheet" href = "style.css">     
+        <link rel = "stylesheet" href = "fontAwesome/css/all.css">
+    </head>
+        
+    <body class = "home-body">                               <!-- not a div, but we can still style tags with assigned classes-->
+
+        <div class = "back-button">
+            <a href = "index.html"><i class = "fa"> &#xf0a8; </i>Back to main menu </a>
+        </div>
+        
+        <div id = "header">
+            <img src = "images/header_5.png">                <!-- insert logo header  img -->
+        </div>
+
+        <div id = "home">                                    <!-- all content below the header, which may differ on each page -->
+
+            <div class = "menu-cats">                                    <!-- menu cats on home pg -->
+
+                <h1 style = "color: white; font-family: 'Ink Free'; font-size: 35px; text-align: center;
+                             margin-top: -35px;">
+                    <i><b><u> On The Side:</u></b></i>
+                </h1>                 
+
+                <!--rice price-->
+                <div class = "home-menu-item"  style = "font-family: 'Ink Free'; text-transform: none;">         <!-- class for hyperlinks -->
+                    <div class = "home-menu-cat">
+                        <p><i>  Rice...............R35 </i></p>             <!-- add icon to hyperlink, which is the actual text of the menu cat. NOte: used the unicode (f2e7) because the copied html code from the site wasn't working -->
+                    </div>         
+                    <br>
+                    <img src = "images/rice_sqr.jpg">                          
+                </div>
+
+                <!-- naan price -->
+                <div class = "home-menu-item" style = "font-family: 'Ink Free'; text-transform: none;">      <!-- class for hyperlinks -->
+                    <div class = "home-menu-cat">
+                        <p><i> Garlic Naan......R8 </i></p>                                    <!-- actual text of the menu cat -->
+                    </div>
+                    <br>
+                    <img src = "images/naan_sqr.jpg">
+
+                </div>
+
+                <!-- chips price -->
+                <div class = "home-menu-item" style = "font-family: 'Ink Free'; text-transform: none;">                     <!-- class for hyperlinks -->
+                    <div class = "home-menu-cat">
+                        <p><i> Chips............ R25 </i></p>     <!-- add icon to hyperlink, which is the actual text of the menu cat -->
+                    </div>
+                    <br>
+                    <img src = "images/sides_small_sqr.jpg">
+                </div>
+
+                <!-- roti price -->
+                <div class = "home-menu-item" style = "font-family: 'Ink Free'; text-transform: none;">      <!-- class for hyperlinks -->
+                    <div class = "home-menu-cat">
+                        <p><i> Roti.............. R8 </i></p>     <!-- add icon to hyperlink, which is the actual text of the menu cat -->
+                    </div>
+                    <br>
+                    <img src = "images/roti_sqr.jpg">
+                </div>
+
+                <!-- Add note at bottom of page to indicate that sides are only sold with items on the meals menu and not alone -->
+
+                <h2 style = "color: white; font-family: 'Arial Narrow'; display: block; padding-top: 50px;
+                            padding-right: 10%; text-align: center; font-size: 24px; padding-left: 10%;"> 
+
+                        <i>*NOTE: Side dishes are only sold in combination with items from the </i>
+
+                        <a href = "meals.html" style = "font-family: 'Arial Narrow'; color: white; 
+                         text-decoration: none;"> 
+                         
+                        <i class = "fa"> &#xf2e7; </i>  <u>meals</u></a><i> menu. </i>
+                </h2>
+
+            </div>
+
+        </div>
+    </body>
+
+</html>
