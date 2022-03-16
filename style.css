@@ -38,7 +38,7 @@ body{                                       /* all body content in all pages (no
     width                : 100%;
     height               : 100%;
     box-sizing           : border-box; 
-    background-attachment: fixed;                                   /* ensures that image remains fixed i place even when scrolling down */
+    background-attachment: fixed;                                   /* ensures that image remains fixed in place even when scrolling down */
 }
 
 /*====== Home Content Below Header ======*/
@@ -91,49 +91,6 @@ body{                                       /* all body content in all pages (no
     padding-right: 5px;                     /* add some space between the icon and the hyperlink text */
 }
 
-/*============ MEALS MENU  ===============*/
-
-/*====== Meal Items ======*/
-
-.menu-item {                                /* hyperlink with class "menu-item" (contains the p & img of e. menu-item) */
-    text-decoration: none;                  /* no underline beneath hyperlink */
-    text-transform : lowercase;             /* makes hyperlink text written in caps, even though the text in our index.html is not written in caps */
-
-    color          : white;
-    font-size      : 25px;
-    font-weight    : bold;
-    text-align     : center;
-
-    display        : block;                 /* ensures that border around the hyperlink is displayed as a block */
-    margin-left    : 110px;                 /* margin around hyperlink text */
-    margin-bottom  : 10px;                  /* creates a padding below other menu categories */
-    width          : 80%;                   /* width of text-box (splits the page width between the three menu-items) */
-    margin-top     : 130px;
-}
-
-.menu-item img {
-    display      : block;
-    width        : 90%;
-    margin       : auto;
-    margin-bottom: 10px;
-    border       : white 3px solid;
-    margin-left  : 60px;
-}
-
-.meals-menu-item {                          /* hyperlink with the class "home-menu-cat" */
-    display    : block;                     
-    border     : 3px solid white;           /* add a white box around the menu categories text on the home page */
-    width      : 90%;
-    height     : 72px;                      /* height of border box */
-    text-align : center;
-    margin-left: 60px;                      /* amount of space next in the left margin of hyperlink textbox */
-}
-
-.meals-menu-item i {
-    color  : white;
-    z-index: 500;
-}
-
 /*====== Back To Main Menu  ======*/
 
 .back-button i {                            /* style icon for our back-button */
@@ -173,7 +130,7 @@ body{                                       /* all body content in all pages (no
     color         : white;
     font-family   : 'Ink Free';
     margin-left   : 120px;
-    margin-top    : 160px;
+    margin-top    : 200px;
     height        : 1822px;
     padding-bottom: 120px;                  /* amount of space between last item in div and border */
 }
@@ -415,7 +372,6 @@ textarea{                                   /* textarea of additional notes inpu
 
 /*=========================================== RESPONSIVE LAYOUT ===================================================*/
 
-
 /*======== SMALL CONTENT (600px) ========*/
 
 @media only screen and (min-width: 600px) {           /* when viewer's screen has a width of 600px or less, change some of our style to adjust to that screen size (e.g. paragraphs, headings, etc) */
@@ -518,10 +474,8 @@ textarea{                                   /* textarea of additional notes inpu
 
 }
 
-
 /*==================================================================================================================*/
     
-
 
 /*======== MEDIUM CONTENT (1000px) ========*/
    
@@ -678,9 +632,7 @@ textarea{                                   /* textarea of additional notes inpu
     
 }
 
-
 /*==================================================================================================================*/
-
 
     
 /*======== Large Content (1500px) ========*/
@@ -804,10 +756,10 @@ textarea{                                   /* textarea of additional notes inpu
         margin-top: 10px;
     }
     
-        .order-type-button {
-            height: 60px;
-            font-size: 48px;
-        }
+    .order-type-button {
+        height: 60px;
+        font-size: 48px;
+    }
     
 /*====== Submit Delivery Details ======*/
     
@@ -827,5 +779,3 @@ textarea{                                   /* textarea of additional notes inpu
     }
         
 }
-    
-/* FINAL PRODUCT */
