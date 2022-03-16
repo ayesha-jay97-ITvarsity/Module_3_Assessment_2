@@ -61,8 +61,9 @@ body{                                       /* all body content in all pages (no
     text-align     : center;
 
     display        : block;                 /* ensures that border around the hyperlink is displayed as a block */
-    margin-left    : 18%;                   /* margin around hyperlink text */
+    margin-left    : 5%;                   /* margin around hyperlink text */
     margin-bottom  : 20px;                  /* creates a padding below other menu categories */
+    margin-top     : 85px;
 }
 
 .home-menu-item img {
@@ -70,6 +71,7 @@ body{                                       /* all body content in all pages (no
     width        : 80%;
     margin       : auto;
     margin-bottom: 10px;
+    margin-left  : 6%;
     border       : white 3px solid;
 }
 
@@ -79,7 +81,7 @@ body{                                       /* all body content in all pages (no
     width      : 80%;
     height     : 72px;                      /* height of border box */
     text-align : center;
-    margin-left: 110px;                      /* amount of space next in the left margin of hyperlink textbox */
+    margin-left: 6%;                      /* amount of space next in the left margin of hyperlink textbox */
     margin-top : 50px;
 }
 
@@ -103,10 +105,10 @@ body{                                       /* all body content in all pages (no
     text-align     : center;
 
     display        : block;                 /* ensures that border around the hyperlink is displayed as a block */
-    margin-left    : 20px;                  /* margin around hyperlink text */
+    margin-left    : 110px;                 /* margin around hyperlink text */
     margin-bottom  : 10px;                  /* creates a padding below other menu categories */
     width          : 80%;                   /* width of text-box (splits the page width between the three menu-items) */
-    margin-top     : 70px;
+    margin-top     : 130px;
 }
 
 .menu-item img {
@@ -128,7 +130,7 @@ body{                                       /* all body content in all pages (no
 }
 
 .meals-menu-item i {
-    color: white;
+    color  : white;
     z-index: 500;
 }
 
@@ -146,7 +148,7 @@ body{                                       /* all body content in all pages (no
     font-family    : 'Arial Narrow';
     color          : white;
     z-index        : 600;                   /* need to give your hyperlink a z-index, otherwise its essentially hidden behind your body, and thus unclickable because the body-layer is on top */
-    font-size      : 20px;
+    font-size      : 26px;
     text-decoration: none;
     font-weight    : bold;
     text-transform : lowercase;
@@ -164,14 +166,16 @@ body{                                       /* all body content in all pages (no
 /*====== Item Description  ======*/
 
 .item-descript {                            /* div for item description of each menu-item (e.g. butterchicken) */
-    border       : white 2px;
-    border-style : dotted;                  /* border style is dotted */
-    width        : 80%;
-    color        : white;
-    font-family  : 'Ink Free';
-    margin-left  : 57px;
-    margin-top   : 60px;
-    height       : 1562px;
+    display       : block;
+    border        : white 3px;
+    border-style  : dotted;                 /* border style is dotted */
+    width         : 80%;
+    color         : white;
+    font-family   : 'Ink Free';
+    margin-left   : 120px;
+    margin-top    : 160px;
+    height        : 1822px;
+    padding-bottom: 120px;                  /* amount of space between last item in div and border */
 }
 
 .item-descript-details {
@@ -210,10 +214,10 @@ body{                                       /* all body content in all pages (no
     padding-top        : 20px;
     background-image   : url("images/page.png");
     background-repeat  : no-repeat;
-    background-size    : 90% 100%;
+    background-size    : 60% 100%;
     padding-bottom     : 0px;
     background-position: center;
-    padding-left       : 100px;
+    padding-left       : 390px;
     margin-bottom      : 50px;
 }
 
@@ -228,7 +232,7 @@ body{                                       /* all body content in all pages (no
 }
 
 .extras label {                         /* to style the checkbox labels in our ingredients div */
-    line-height: 25px;                  /* the vertical spacing between each checkbox */
+    line-height: 40px;                  /* the vertical spacing between each checkbox */
     margin-left: 10px;                  /* spacing between actual checkboxes and checkbox text */
     font-size  : x-large;
     font-weight: bold;
@@ -239,7 +243,7 @@ body{                                       /* all body content in all pages (no
 /*====== Contact Form Content ======*/
 
 #contact_form {
-    border      : white dotted 2px;
+    border      : white dotted 3px;
     width       : 86%;
     margin-top  : 20px;
     height      : 360px;
@@ -252,22 +256,21 @@ body{                                       /* all body content in all pages (no
     margin-top: 15px;
 }
 
-textarea{                                   /* textarea of additional notes input box */
-    width      : 90%;
-    margin-left: 4%; 
-    height     : 55%;   
-    margin-bottom: 10px;
-    font-size    : 25px;
-    font-family: 'Ink Free'          
-}
-
 #contact_form input {                       /* "name" input box */
     width      : 90%;                       /* width of name input box */
-    height     : 25px;                      
-    margin-left: 17px;    
+    height     : 25px;      
     margin-top : 2px;
     font-size  : 25px;
     font-family: 'Ink Free'
+}
+
+textarea{                                   /* textarea of additional notes input box */
+    width        : 90%;
+    margin-left  : 4%; 
+    height       : 55%;   
+    margin-bottom: 1px;
+    font-size    : 25px;
+    font-family  : 'Ink Free'          
 }
 
 .button{                                    /* order button */
@@ -279,16 +282,20 @@ textarea{                                   /* textarea of additional notes inpu
     color           : white;
     font-size       : 16px;
     font-weight     : 600;
-    margin          : 12px 0;
+    margin          : auto;
     padding         : 8px 0;                /* padding around "order" text */
     margin-left     : 32%;                  /* margin space to left of button */
     border          : ridge 3px;
 }
 
 #contact_form a {                           /* "order" button hyperlink */
-    font-size     : 28px;
+    font-size     : 46px;
     font-family   :'Arial Narrow';
     letter-spacing: 3px;                    /* add some spacing in between each letter of the word "Order" */
+}
+
+#contact_form a:hover {
+    text-decoration: underline;
 }
 
 /*============ MENU ITEM  ===============*/
@@ -296,7 +303,7 @@ textarea{                                   /* textarea of additional notes inpu
 /*====== Order Type: Collection/Delivery ======*/
 
 .order-type { 
-    border     : white dotted 2px;
+    border     : white dotted 3px;
     width      : 80%;
     margin     : auto;
     color      : white;
@@ -354,7 +361,7 @@ textarea{                                   /* textarea of additional notes inpu
 /*====== Delivery Page ======*/
 
 .deliv-form {
-    border: dotted white 2px;
+    border: dotted white 3px;
     width : 90%;
     margin: auto;
     height: 250px;
@@ -406,7 +413,6 @@ textarea{                                   /* textarea of additional notes inpu
 }
 
 
-
 /*=========================================== RESPONSIVE LAYOUT ===================================================*/
 
 
@@ -415,235 +421,311 @@ textarea{                                   /* textarea of additional notes inpu
 @media only screen and (min-width: 600px) {           /* when viewer's screen has a width of 600px or less, change some of our style to adjust to that screen size (e.g. paragraphs, headings, etc) */
     
 /*====== Back To Main Menu  ======*/
+      
+    .back-button a {                            /* style the hyperlink text next to the back-button icon */
+        font-size: 20px;
+    }
 
-.back-button i {                            /* style icon for our back-button */
-    font-size    : 18px;
-    padding-top  : 1px;
-}
+    .back-button i {
+        font-size: 20px;   
+    }     
 
-.back-button a {                            /* style the hyperlink text next to the back-button icon */
-    font-size      : 20px;
-}
-
-#header img {
-    padding-top: 5px;                       /* add some space between header img and contact hyperlink */
-}
-
-/*====== Home Content Below Header ======*/
+    #header img {
+        padding-top: 14px;                       /* add some space between header img and contact hyperlink */
+    }
+   
+/*====== Home Menu Catgories ======*/
 
     #home {
-        padding-top     : 80px;                       /* reduce the space below header and content */
+        padding-top: 70px;                       /* reduce the space below header and content */
     }
+
+    #home-item {                                      /* reduce the space below header for specific meal dish e.g. bananasplit */
+        padding-top: 1px;
+    }
+
+/*====== Item Description  ======*/
+    
+.item-descript {                            /* div for item description of each menu-item (e.g. butterchicken) */
+    width        : 88%;
+    height       : 1552px;
+    margin-left  : 25px;
+    margin-bottom: 50px;
+}
 
 /*====== Home Menu Catgories ======*/
-    
+        
     .home-menu-item {                                   
-        width: 90%;
+        width      : 90%;
         margin-left: 10%; 
     }
-
+    
     .home-menu-item img {
         width        : 80%;
         margin-bottom: 10px;
-        margin-left: 17px;
+        margin-left  : 17px;
     }
-
+    
     .home-menu-cat {              
         width      : 80%;
         height     : 72px;                      /* height of border box */
         margin-left: 17px;                      /* amount of space next in the left margin of hyperlink textbox */
         margin-top : 50px;
     }
-
+    
     #header img {
-        padding-top: 5px;                       /* add some space between header img and contact hyperlink */
+        padding-top: 15px;                       /* add some space between header img and contact hyperlink */
+    }   
+
+/*====== Extras Checkbox ======*/
+    
+    .extras {
+        padding-left   : 70px;
+        background-size: 90%;
+    }
+    
+    .extras h2 {
+        font-size     : 40px;
+        padding-bottom: 10px;
+        margin-left   : 55px; 
+    }
+    
+/*====== Contact Form ======*/
+    
+    #contact_form {
+        padding-bottom: 98px;
+    }
+    
+    #contact_form h1 {
+        margin-left: 40px;
+        padding-top: 25px;
+    }
+    
+    #contact_form input {
+        margin-left: 20px;
+    }
+
+    #contact_form a {
+        font-size: 38px;
+    }
+
+/*====== Submit Delivery Details ======*/
+
+    .submit {
+        font-size     : 35px;
+        padding-bottom: 18px;
     }
 
 }
 
-/*======== MEDIUM CONTENT (1000px) ========*/
 
-@media only screen and (min-width: 1000px) {           /* when viewer's screen has a width of 600px, change some of our style to adjust to that screen size (e.g. paragraphs, headings, etc) */
+/*==================================================================================================================*/
     
-/*====== Back To Main Menu  ======*/
 
+
+/*======== MEDIUM CONTENT (1000px) ========*/
+   
+@media only screen and (min-width: 1000px) {           /* when viewer's screen has a width of 600px, change some of our style to adjust to that screen size (e.g. paragraphs, headings, etc) */
+        
+/*====== Back To Main Menu  ======*/
+    
 .back-button i {                            /* style icon for our back-button */
     font-size    : 20px;
     padding-top  : 5px;
 }
-
+    
 .back-button a {                            /* style the hyperlink text next to the back-button icon */
     font-size      : 25px;
 }
-
+    
 #header img {
     padding-top: 0px;                       /* add some space between header img and contact hyperlink */
 }
-
+    
 /*====== Home Content Below Header ======*/
-    
-    #home {
-        padding-top     : 170px;                       /* reduce the space below header and content */
-}
-    
-/*====== Home Menu Catgories ======*/
         
+    #home {
+        padding-top: 170px;                       /* reduce the space below header and content */
+    }
+
+    #home-item {                                      /* reduce the space below header for specific meal dish e.g. bananasplit */
+        padding-top: 70px;
+        padding-left: 30px;
+    }
+
+/*====== Home Menu Catgories ======*/
+            
     .home-menu-item {                                   
-        width: 90%;
+        width      : 90%;
         margin-left: 10%; 
         font-size  : 32px;
     }
-    
+        
     .home-menu-cat {              
         width      : 80%;
         margin-left: 22px;                      /* amount of space next in the left margin of hyperlink textbox */
         margin-top : 50px;
         height     : 92px;
     }
-    
+        
     .home-menu-item img {
         width        : 80%;
         margin-bottom: 10px;
         margin-left  : 22px;
     }
-
+    
 /*====== Meal Items ======*/
-
+    
     .menu-item {                    
         font-size: 32px;
     }
-
+    
     .menu-item img {
         margin-left: 110px;
     }
-
+    
     .meals-menu-item {     
         height     : 102px;                      /* height of border box */
         margin-left: 110px;                      /* amount of space next in the left margin of hyperlink textbox */
     }
-
+    
 /*====== Item Description  ======*/
-
+    
     .item-descript {                            /* div for item description of each menu-item (e.g. butterchicken) */
         width : 88%;
         height: 1892px;
+        padding-left: 5px;
+        display: block;
     }
-
+    
     .item-descript img {
         margin-left: 50px;
     }
-
+    
     .item-descript h1 {
         padding-right: 110px;
         font-size    : 40px;
     }
-
+    
     .item-descript p {
         font-size: 30px;
     }
-    
+        
 /*====== Extras Checkbox ======*/
-
+    
     .extras {
-        padding-left: 300px;
+        padding-left: 250px;
+        background-size: 80% 100%;
     }
-
+    
     .extras h2 {
         font-size     : 40px;
         padding-bottom: 15px;
-        margin-left: 10px; 
+        margin-left   : 10px; 
     }
-
+    
     .extras label {
         font-size: 32px;
     }
-
+    
 /*====== Contact Form ======*/
-
+    
     #contact_form {
-        padding-bottom: 38px;
+        padding-bottom: 115px;
     }
-
+    
     #contact_form h1 {
         margin-left: 150px;
         padding-top: 25px;
     }
-
+    
     #contact_form input {
         margin-left: 28px;
     }
-
+    
 /*====== Thank You: Collect/Deliver ======*/
-
+    
     .order-type p {
         font-size: 32px;
     }    
-
+    
     .order-type h1 {
         font-size: 40px;
     }
-
+    
     .order-type h2 {
         font-size: 38px;
     }
-
+    
     #order-number p{
         font-size: 45px;
         margin: auto;
         margin-top: 10px;
     }
 
+    .order-type-button {
+        font-size: 40px;
+    }
+    
 /*====== Submit Delivery Details ======*/
-
+    
     .submit {
         height : 52px;
-        font-size: 32px;
+        font-size: 38px;
         padding-bottom: 8px;
         padding-top: 14px;
     }
-
+    
 }
 
-/*======== Large Content (1500px) ========*/
 
+/*==================================================================================================================*/
+
+
+    
+/*======== Large Content (1500px) ========*/
+    
 @media only screen and (min-width: 1500px) {           /* when viewer's screen has a width of 600px or less, change some of our style to adjust to that screen size (e.g. paragraphs, headings, etc) */
-    
+        
 /*====== Back To Main Menu  ======*/
-    
+        
     .back-button i {                            /* style icon for our back-button */
         font-size    : 28px;
         padding-top  : 10px;
     }
-    
+        
     .back-button a {                            /* style the hyperlink text next to the back-button icon */
         font-size      : 26px;
     }
-    
+        
     #header img {
         padding-top: 0px;                       /* add some space between header img and contact hyperlink */
     }
-    
+        
 /*====== Home Content Below Header ======*/
-    
+        
     #home {
         padding-top     : 250px;                       /* reduce the space below header and content */
     }
-    
-/*====== Home Menu Catgories ======*/
         
+    #home-item {                                      /* reduce the space below header for specific meal dish e.g. bananasplit */
+        padding-top: 140px;
+    }
+/*====== Home Menu Catgories ======*/
+            
     .home-menu-item {                                   
         width      : 80%;
         margin-left: 16%; 
         font-size  : 36px;
         border     : 5px;
     }
-       
+           
     .home-menu-item img {
         width        : 80%;
         margin-bottom: 10px;
         margin-left: 17px;
     }
-    
+        
     .home-menu-cat {              
         width      : 80%;
         height     : 110px;                      /* height of border box */
@@ -653,114 +735,97 @@ textarea{                                   /* textarea of additional notes inpu
         padding-top: 0px;
     }
 
-/*====== Meal Items ======*/
-
-    .meals-menu-item {     
-        height     : 102px;                      /* height of border box */
-        margin-left: 168px;                      /* amount of space next in the left margin of hyperlink textbox */
-    }
-
-    .menu-item img {
-        margin-left: 165px;
-    }
-
-    .menu-item {                    
-        font-size: 38px;
-    }
-
+    
 /*====== Item Description  ======*/
-
+    
     .item-descript {                            /* div for item description of each menu-item (e.g. butterchicken) */
         width : 80%;
-        height: 2392px;
-        margin-left: 150px;
+        height: 2292px;
+        margin-left: 130px;
     }
-
+    
     .item-descript h1 {
         padding-right: 250px;
         font-size    : 50px;
         padding-left : 50px;
     }
-
+    
     .item-descript p {
         font-size: 38px;
         padding-left: 50px;
     }
-
+    
 /*====== Extras Checkbox ======*/
-
+    
     .extras {
         padding-left   : 400px;
         background-size: 70% 100%;
     }
-
+    
     .extras h2 {
         font-size     : 50px;
         padding-bottom: 15px;
         margin-left   : 50px; 
     }
-
+    
     .extras label {
         font-size: 42px;    
     }
-
+    
 /*====== Contact Form ======*/
-
+    
     #contact_form {
         padding-bottom: 150px;
     }
-
+    
     #contact_form h1 {
         margin-left: 280px;
         padding-top: 25px;
     }
-
+    
     #contact_form input {
         margin-left: 40px;
         height     : 45px;
     }
-
+    
 /*====== Thank You: Collect/Deliver ======*/
-
+    
     .order-type h1 {
         font-size: 50px;
     }
-
+    
     .order-type h2 {
         font-size: 42px;
     }
-
+    
     #order-number p{
         font-size: 48px;
         margin: auto;
         margin-top: 10px;
     }
-
-    .order-type-button {
-        height: 60px;
-        font-size: 48px;
-    }
-
+    
+        .order-type-button {
+            height: 60px;
+            font-size: 48px;
+        }
+    
 /*====== Submit Delivery Details ======*/
-
+    
     .submit {
         height : 62px;
         font-size: 45px;
         padding-bottom: 8px;
         padding-top: 14px;
     }
-
+    
     .deliv-form input {
         height: 40px;
     }
-
+    
     .deliv-form {
         height: 400px;
     }
-    
+        
 }
     
-
-    
-
-
+/* FINAL PRODUCT */
